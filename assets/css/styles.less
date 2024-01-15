@@ -251,13 +251,48 @@
                 background-image: linear-gradient(to right,#f9a400, #333333, #000000);
             }
             .box2 {
-                height: 300px;
+                height: 600px;
                 --mask:
                   radial-gradient(39.37px at 50% 55.50px,#000 99%,#0000 101%) calc(50% - 60px) 0/120px 100%,
                   radial-gradient(39.37px at 50% -25.5px,#0000 99%,#000 101%) 50% 30px/120px 100% repeat-x;
                 -webkit-mask: var(--mask);
                         mask: var(--mask);
+                        ul {
+                            margin-top: 60px; margin-left: 100px;
+                            li {
+                                font-family: 'Montserrat';
+                                list-style: none;
+                                padding: 6px;
+                                font-size: 18px;
+                            }
+                        }
               }
+              #box3 {
+                border-top: solid 1px white;
+                margin: 0 !important;
+                padding: 0 !important;
+              }
+              #fLogo {
+                background-image: url(../images/elevated-high-resolution-logo.png);
+                background-position: left;
+                background-size: 150px 110px;
+                background-repeat: no-repeat;
+            }
+            #icons {
+                color: white;
+                font-size: 40px;
+                text-align: center;
+                i {
+                    margin-top: 30px;
+                }
+            }
+            #bottom {
+                margin: 0 !important;
+                padding: 0 !important;
+                .col {
+                    margin: 0 !important;
+                }
+            }
         // Signup page
         .background {
             background-image: url(../images/Signup-BG.png);
