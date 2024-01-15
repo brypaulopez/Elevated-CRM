@@ -1,0 +1,191 @@
+* {
+    margin: 0; padding: 0;
+    font-family: 'Montserrat';
+    .is-dragging {
+        scale: 1.05;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+        background-color: rgb(5, 51, 51);
+        color: black;
+    }
+    *::-webkit-scrollbar {
+        display: none;
+    }
+    body {
+        height: 100%;
+    }
+    header {
+        margin: 0 !important; 
+        background-color: #333333;
+        height: 40px;
+        #logo {
+            height: 40px;
+            background-image: url(../images/elevated-high-resolution-logo-only.png);
+            background-position: left;
+            background-size: 30px 30px;
+            background-repeat: no-repeat;
+        }
+        #search {
+            text-align: center;
+            height: 40px;
+            input {
+                width: 500px;
+                margin: 5px 0 0 350px;
+                text-align: center;
+                border-radius: 8px;
+            }
+            .fa-magnifying-glass {
+                position: absolute;
+                left: 850px;
+                top: 12px;
+                color: gray;
+            }
+        }
+        #new {
+            color: white;
+            margin-top: 6px;
+            padding: 0 0 0 300px;
+        }
+        #quick {
+            margin-top: 6px;
+            color: white;
+            text-align: center;
+        }
+        #icon {
+            margin-top: 6px;
+            text-align: center;
+            color: white;
+        }
+    }
+    aside {
+        height: 100%;
+        #body1 {
+            height: 100%;
+            background-image: url(../images/flat-mountains.png);
+        }
+        .column1 {
+            padding: 5px;
+        }
+        #col1 {
+            border: solid 1px whitesmoke;
+            background-color: #f7f8f9;
+            top: 40px;
+            height: 100%;
+            a {
+                text-decoration: none;
+                color: black;
+            }
+            #colIcon {
+                height: 40px;
+                border-bottom: 1px solid rgb(155, 151, 151);
+            }
+            #colHome {
+                // background-color: #f9a400;
+                border-radius: 5px;
+                margin-top: 5px;
+            }
+            #colInbox {
+                border-radius: 5px;
+            }
+            #colMore {
+                border-bottom: 1px solid rgb(155, 151, 151);
+            }
+            #colHome:hover {background-color: #e2e2e2; border-radius: 5px;}
+            #colInbox:hover {background-color: #e2e2e2;}
+            #colMore:hover {background-color: #e2e2e2; border-radius: 5px;}
+            #colEverything:hover {background-color: #e2e2e2; border-radius: 5px;}
+            #colTeamspace:hover {background-color: #e2e2e2; border-radius: 5px;}
+            #colBian:hover {background-color: #e2e2e2; border-radius: 5px;}
+            #colViewspace:hover {background-color: #e2e2e2; border-radius: 5px;}
+            #colCreatespace:hover {background-color: #e2e2e2; border-radius: 5px;}
+            #colSpaces {
+                margin-top: 50px;
+                font-size: 13px;
+            }
+            #colBian {
+                padding-left: 20px;
+                border-radius: 8px;
+            }
+            #colMyle {
+                padding-left: 20px;
+                background-color: #f9a400;
+                border-radius: 8px;
+            }
+        }
+        #col2 {
+            margin-left: 320px; padding-top: 20px;
+            height: 100vh;
+            overflow: scroll;
+            background-image: url(../images/flat-mountains.png);
+            background-position: center;
+            background-size: cover;
+            #todo-form {
+                padding: 32px 32px 0;
+            }
+            #todo-form input {
+                padding: 12px;
+                margin-right: 12px;
+                width: 225px;
+                border-radius: 4px;
+                border: none;
+                box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+                background: white;
+                font-size: 14px;
+                outline: none;
+            }
+            #todo-form button {
+                padding: 12px 32px;
+                border-radius: 4px;
+                border: none;
+                box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+                background: #ffffff;
+                color: black;
+                font-weight: bold;
+                font-size: 14px;
+                cursor: pointer;
+            }
+            .lanes {
+                display: flex;
+                align-items: flex-start;
+                justify-content: start;
+                gap: 16px;
+                padding: 24px 32px;
+                overflow: scroll;
+                height: 100%;
+            }
+            .heading {
+                font-size: 30px;
+                font-weight: bold;
+                margin-bottom: 8px;
+            }
+            .swim-lane {
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                background: #e2e2e2;
+                box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+                padding: 12px;
+                border-radius: 4px;
+                width: 225px;
+                min-height: 120px;
+                flex-shrink: 0;
+            }
+            .task {
+                background: white;
+                color: black;
+                box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+                padding: 12px;
+                border-radius: 4px;
+                font-size: 16px;
+                cursor: move;
+            }
+        }
+    }
+    .container {
+        position: absolute;
+        width: 600px !important;
+        z-index: 1;
+        right: 100px;
+        background-color: white;
+        top: 500px;
+    }
+}
